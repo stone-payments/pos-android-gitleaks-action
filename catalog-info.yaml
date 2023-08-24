@@ -1,0 +1,23 @@
+apiVersion: backstage.io/v1alpha1
+kind: Component
+metadata:
+  name: pos-android-gitleaks-action
+  title: POS Android Gitleaks Action
+  description: a simple way to run gitleaks in your CI/CD pipeline.
+  namespace: stone
+  annotations:
+    legacy.stone.tech/owner-email: frodrigues@stone.com.br
+    
+  labels:
+    legacy.stone.tech/internal-user-auth-base: sso
+    legacy.stone.tech/access-request-type: github
+    legacy.stone.tech/handle-lgpd: "false"
+    legacy.stone.tech/customer-auth-method: not-applicable
+    stone.tech/endpoint-type: none
+  
+spec:
+  type: service
+  lifecycle: deprecated
+  owner: stone-payments/pos-android-writer
+  system: system:stone/pos-android
+  
